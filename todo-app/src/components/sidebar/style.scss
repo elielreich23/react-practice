@@ -1,4 +1,5 @@
 .container {
+    position: static;
     height: 50rem;
     width: 3.5rem;
     background: #1C1D22;
@@ -180,13 +181,130 @@
     }
 
 }
+
 .active {
     position: absolute;
     width: 20rem;
     height: 50rem;
     left: 3.5rem;
     top: 0px;
-//    CHANGE TO white after
-    background: #5f5858;
+    //    CHANGE TO white after
+    background: #e0d8d8;
     box-shadow: 40px 180px 80px rgba(28, 29, 34, 0.06);
+
+    .project {
+        width: 262px;
+        height: 30px;
+        left: 118px;
+        top: 32px;
+
+        h1 {
+            width: 5rem;
+            height: 30px;
+            margin: 1.22rem 10.75rem 0 1.75rem;
+
+
+            font-family: "Exo 2";
+            font-style: bold;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 100%;
+
+            /* identical to box height, or 30px */
+
+            color: #1C1D22;
+        }
+
+        .new {
+            position: absolute;
+            background: rgba(28, 29, 34, 0.08);
+            height: 1.52rem;
+            width: 1.52rem;
+            top: 1.55rem;
+            margin: 0 17.15rem;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 50%;
+
+        }
+
+        span {
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            margin-left: 17.5rem;
+            margin-top: -1.4rem;
+            cursor: pointer;
+            opacity: 0.4;
+        }
+    }
+
+    .menus {
+        width: 261px;
+        height: 572px;
+        margin: 2rem 1.813rem 0 1.75rem;
+        // padding-top: 0.1rem;
+        display: block;
+        // top: 100px;
+        // background-color: red;
+
+        h3 {
+            font-family: "Exo 2";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        // p{
+        //     width: 2rem;
+        //     height: 2rem;
+        // }
+
+        .team {
+            // position: absolute;
+            width: 16.3rem;
+            height: 1.5rem;
+            display: flex;
+            color: rgba(28, 29, 34, 0.5);
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+
+        .projects {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .task {
+            //make arrow larger
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .reminders {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .message {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
