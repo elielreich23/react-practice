@@ -1,6 +1,9 @@
 import React from 'react'
 import './style.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {AiOutlineCalendar} from "react-icons/ai"
+import {IoSearch} from "react-icons/io5"
+import {FaRegBell} from "react-icons/fa"
+
 
 const Header = () => {
   return (
@@ -11,11 +14,21 @@ const Header = () => {
             {/* create a function to collect user name upon signup */}
           </div>
           <div className="header-icons">
-            <div className="header icn1">
-            <FontAwesomeIcon icon="fa-light fa-magnifying-glass"/>
-            </div>
+            <IoSearch/>
+            <FaRegBell/>
+            <AiOutlineCalendar/>
+            <span>
+              {/* this will be change to a dynamic date picked from  */}
+              19 May 2022
+            </span>
+          </div>
+          <div className="profile">
+            <img src="../../assets/Image.png" alt="" />
           </div>
         </div>
+      </div>
+      <div className="subheader">
+        
       </div>
     </>
   )

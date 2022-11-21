@@ -29,18 +29,50 @@
                 color: #fab81d;
             }
         }
-        .header-icons{
-            position: absolute;
+
+        .header-icons {
+            //reduce space between search and calendar
             width: 16rem;
-            background-color: #fff;
+            cursor: pointer;
             height: 2rem;
-            margin: -1.5rem 38.93rem;
-            // top: 1.813rem;
+            display: flex;
+            padding-left: 0.5rem;
+            justify-content: space-evenly;
+            margin-top: -1.2rem;
+            margin-left: 34rem;
+
+            span {
+                width: 93px;
+                height: 16px;
+                margin-left: -22px;
+                top: 39px;
+
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                color: rgba(28, 29, 34, 0.5);
+            }
         }
-        .header-icn1{
-            width: 1.32rem;
-            height: 1.32rem;
-            
+
+        .profile {
+            height: 1.8rem;
+            width: 1.8rem;
+            background-image: url(../../assets/Image.png);
+            border-radius: 50%;
+            margin-left: 51rem;
+            margin-top: -2.3rem;
+            cursor: pointer;
         }
     }
+}
+
+.subheader {
+    position: absolute;
+    width: 56.8rem;
+    height: 3rem;
+    left: 22.5rem;
+    top: 5.2rem;
+    background-color: rgb(99, 73, 73);
 }
