@@ -8,23 +8,33 @@ const Index = () => {
 
             {/* <FontAwesomeIcon icon={solid('user-secret=*')}/> */}
             <div className="container">
+                {/* toggle */}
                 <div className="dots">
                     <div className="one"></div>
                     <div className="two"></div>
                     <div className="three"></div>
                 </div>
+                {/* logo */}
                 <div className="img"></div>
                 <div className="icons-container">
+                    {/*  projects this toggle on click of icon */}
                     <div className="icon1">
                         <div className="outer-circle"></div>
                     </div>
+                    {/* profile */}
                     <div className="icon2"></div>
+                    {/* calendar */}
                     <div className="icon3"></div>
+                    {/* statistics */}
                     <div className="icon4"></div>
+                    {/* upload */}
                     <div className="icon5"></div>
+                    {/* still deciding on what to put here */}
                     <div className="icon6"></div>
+                    {/* Setting */}
                     <div className="icon7"></div>
                 </div>
+                {/* logout */}
                 <div className="icon8"></div>
             </div>
             <div className="active">

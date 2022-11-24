@@ -31,7 +31,11 @@ const Header = () => {
         <div className="right">
           {/* <img src="./1.png" alt="" /> */}
           <div className="board">
-            <img src="" alt="" />
+            <div className="rec">
+            <p className="one"></p>
+            <p className="two" ></p>
+            </div>
+            {/* <img src="" alt="" /> */}
             <h4>Board view</h4>
           </div>
 
@@ -40,14 +44,19 @@ const Header = () => {
             <div className="circle">
               <span>+</span>
             </div>
-              <h3>Add view</h3>
+            <h3>Add view</h3>
           </div>
         </div>
         <div className="left">
-          <ul >
-            <li className="bold" >Filter</li>
-            <li>Sort</li>
-          </ul>
+          <h5 className="bold" >Filter</h5>
+          <h5>
+            <span>Sort</span>
+          </h5>
+          <div className="dots-container"></div>
+          <p>...</p>
+          <button>
+            <span>New Template</span>
+          </button>
         </div>
         <div className="line"></div>
       </div>

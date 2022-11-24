@@ -89,10 +89,40 @@
             display: flex;
             flex-direction: column;
 
-            // img {
-            //     position: relative;
-            //     left: 5rem;
-            // }
+            .rec {
+
+                //make the two object as one for a better hover effect
+                cursor: pointer;
+                background-color: #1C1D22;
+
+                .one {
+                    position: absolute;
+                    height: 0.4rem;
+                    width: 0.8rem;
+                    top: 0.15rem;
+                    left: -1rem;
+                    border: 2px solid #1C1D22;
+
+                    &:hover {
+                        border: 2px solid #838383;
+                    }
+                }
+
+                .two {
+                    position: absolute;
+                    height: 0.35rem;
+                    width: 0.8rem;
+                    margin-top: 0.7rem;
+                    left: -1rem;
+                    border: 2px solid #1C1D22;
+
+                    &:hover {
+                        border: 2px solid #838383;
+                    }
+                }
+
+            }
+
             img {
                 // adjust img to be vidible
                 position: absolute;
@@ -118,7 +148,12 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 100%;
+                cursor: pointer;
                 color: #1C1D22;
+
+                &:hover {
+                    color: rgba(58, 57, 57, 0.5);
+                }
             }
         }
 
@@ -134,31 +169,37 @@
                 width: 1.3rem;
                 height: 1.3rem;
                 top: 1.2rem;
-                left: 2.75rem;
+                left: 2.78rem;
                 border-radius: 50%;
+                // cursor: pointer;
                 background: rgba(28, 29, 34, 0.08);
+
 
                 span {
                     position: absolute;
-                    left: 7.1rem;
-                    top: 0.1rem;
+                    left: 7.13rem;
+                    top: 0.05rem;
                     opacity: 0.4;
-
                 }
             }
 
             h3 {
                 position: relative;
                 left: 2rem;
-                top: -1.3rem;
+                top: -1.2rem;
                 bottom: 87.77%;
+                cursor: pointer;
 
                 font-family: "Exo 2";
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 100%;
-                color: rgba(28, 29, 34, 0.5);
+                color: rgb(0, 0, 0);
+
+                &:hover {
+                    color: rgba(58, 57, 57, 0.5);
+                }
             }
         }
     }
@@ -173,19 +214,102 @@
         margin-top: -0.2rem;
         //  background-color: #fab81d;
 
-        ul {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding: 0.5rem 3rem;
+        h5 {
+            margin-top: -1rem;
+            margin-left: 2rem;
 
+            span {
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 100%;
+                cursor: pointer;
+                color: rgba(47, 47, 48, 0.5);
+
+                &:hover{
+                    //make the hover color brighter
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+        .bold {
+            cursor: pointer;
+            margin-top: 1.3rem;
+            margin-left: -1.5rem;
+
+            &:hover {
+                color: rgba(58, 57, 57, 0.5);
+            }
+        }
+
+        .dots-container {
+            // box-sizing: border-box;
+
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 5.5rem;
+            top: 17px;
+
+            background: #ffffff;
+            border: 2px solid rgba(28, 29, 34, 0.1);
+            border-radius: 14px;
+        }
+
+        p {
+            position: absolute;
+            margin-left: 5.33rem;
+            top: 1.018rem;
+            cursor: pointer;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 12px 24px;
+            gap: 10px;
+
+            position: absolute;
+            width: 140px;
+            height: 38px;
+            left: 8rem;
+            border: none;
+            top: 0.5rem;
+            background: #1C1D22;
+            border-radius: 19px;
+
+            &:hover{
+                background: #000000;
+            }
+
+            span {
+                width: 92px;
+                height: 14px;
+                cursor: pointer;
+
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13.8px;
+                line-height: 100%;
+                color: #FFFFFF;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+
+                &:hover{
+                    color: #535353;
+                }
+            }
         }
     }
 
     .line {
         position: absolute;
-        width: 55rem;
+        width: 53.5rem;
         height: 0px;
         left: 1rem;
         top: 3rem;
