@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.scss'
-import Header from '../header/Index'
+import Header from '../header/Header'
 
-const Index = () => {
+const Sidebar = () => {
     return (
         <>
 
@@ -73,4 +73,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Sidebar

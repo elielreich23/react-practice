@@ -1,5 +1,7 @@
 import './App.scss';
-import Index from './components/sidebar/Index';
+import Sidebar from './components/sidebar/Sidebar';
+import Todo from './components/Todo-section/Todo';
+// import Progress from './components/Progress-section/Progress';
 import "./components/FontAwesome"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -9,15 +11,17 @@ function App() {
       {/* <div className="app">
 
     </div> */}
-      <Index />
-        <BrowserRouter>
-          <Routes>
-            <Route path="../src/Pages/profile/index.jsx" element={<Index/>}/> 
+      <Sidebar />
+      <Todo/>
+      {/* <Progress/> */}
+      <BrowserRouter>
+        <Routes>
+          {/* link to / */}
 
-          </Routes>
-        </BrowserRouter>
+          <Route path="../src/Pages/profile/index.jsx" element={<Sidebar />} />
 
-      
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
