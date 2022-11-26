@@ -17,12 +17,21 @@ const Todo = () => {
             </div>
           </div>
           <div className="card-progress">
+            <img src="../../assets/ham.png" alt="" />
             <div className="progress-title">
-              <span>
-                <img src="" alt="" />
-              </span>
               <h4>Progress</h4>
+              <h6>7/10</h6>
             </div>
+            <div className="box">
+              <div className="fill"></div>
+            </div>
+          </div>
+          <div className="infos">
+            <div className="date">
+                <h3>25 Aug 2022</h3>
+            </div>
+            <div className="comments"></div>
+            <div className="files"></div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .container {
     position: static;
-    height: 50rem;
+    height: 55rem;
     width: 3.5rem;
     background: #1C1D22;
     top: 0;
@@ -174,7 +174,7 @@
         background-image: url(../../assets/7.svg);
         cursor: pointer;
         margin-left: 1rem;
-        bottom: -8rem;
+        bottom: -15rem;
         width: 22px;
         opacity: 0.5;
         height: 22px;
@@ -182,10 +182,11 @@
 
 }
 
-.active {
+.activeSidebar {
     position: absolute;
+    // visibility: hidden;
     width: 20rem;
-    height: 50rem;
+    height: 55rem;
     left: 3.5rem;
     top: 0px;
     //    CHANGE TO white after

@@ -37,7 +37,8 @@ const Sidebar = () => {
                 {/* logout */}
                 <div className="icon8"></div>
             </div>
-            <div className="active">
+            <div className="activeSidebar" id="activeSidebar">
+                {/* create rules to display the project sidebar */}
                 <div className="project">
                     <h1>Projects</h1>
                     <div className="new">
@@ -67,8 +68,9 @@ const Sidebar = () => {
                         <p>&#62;</p>
                     </div>
                 </div>
-            <Header />
+                <Header />
             </div>
+
         </>
     )
 }
