@@ -197,6 +197,73 @@
                     flex-grow: 0;
                 }
             }
+
+            .comments {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                left: 14rem;
+                top: 0.5rem;
+                background-image: url(../../assets/comment.svg);
+                opacity: 0.9;
+
+
+                .comm-stats {
+
+                    position: absolute;
+                    left: 1.4rem;
+                    // right: 54.35%;
+                    top: 0.1rem;
+                    bottom: 63.8%;
+
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+
+                    /* identical to box height, or 14px */
+
+                    color: rgba(28, 29, 34, 0.5);
+
+
+                }
+            }
+
+            .files {
+                .file-img {
+                    position: absolute;
+                    width: 18px;
+                    height: 20px;
+                    left: 16.7rem;
+                    top: 0.4rem;
+
+                    transform: rotate(180deg);
+                    opacity: 0.8;
+                    background-image: url(../../assets/att.svg);
+
+                }
+
+                .files-stats {
+                    position: absolute;
+                    left: 18rem;
+                    // right: 51.66%;
+                    top: 0.7rem;
+                    // bottom: 63.8%;
+
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+
+                    /* identical to box height, or 14px */
+
+                    color: rgba(28, 29, 34, 0.5);
+
+
+                }
+            }
         }
 
         &:hover {

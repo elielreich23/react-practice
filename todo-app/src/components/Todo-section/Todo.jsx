@@ -30,8 +30,13 @@ const Todo = () => {
             <div className="date">
                 <h3>25 Aug 2022</h3>
             </div>
-            <div className="comments"></div>
-            <div className="files"></div>
+            <div className="comments">
+              <span className="comm-stats">7</span>
+            </div>
+            <div className="files">
+              <span className="file-img"></span>
+              <div className="files-stats">2</div>
+            </div>
           </div>
         </div>
       </div>
