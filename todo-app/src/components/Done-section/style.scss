@@ -10,14 +10,15 @@
     --date: rgba(136, 141, 167, 0.1);
     --second-date: rgba(255, 121, 121, 0.1);
     --date2: #ff7979;
+    --fill: #78D700;
 
 }
 
-.progress-title {
+.done-title {
     // position: absolute;
     width: 320px;
     height: 18px;
-    margin-left: 48.4rem;
+    margin-left: 69.4rem;
     top: 10.3rem;
     display: inline-block;
     padding-left: 15rem;
@@ -42,12 +43,12 @@
     }
 }
 
-.progress {
+.done {
     // recalibrate size to rem
     position: absolute;
     width: 322px;
     height: 100%;
-    left: 47.4rem;
+    left: 68.7rem;
     top: var(--T);
     border-radius: 8px;
     // background-color: red;
@@ -175,12 +176,12 @@
                 width: 18.3rem;
                 background: rgba(136, 141, 167, 0.1);
 
-                .fill {
+                .done-fill {
                     border: 0px none;
                     border-radius: 2px;
                     height: 4px;
-                    width: 5rem;
-                    background-color: var(--neon-carrot);
+                    width: auto;
+                    background-color: var(--fill);
                 }
             }
 
@@ -195,7 +196,7 @@
 
             .date {
                 align-items: flex-start;
-                background-color: var(--second-date);
+                background-color: var(--date);
                 border: 1px none;
                 border-radius: 17px;
                 display: flex;
@@ -214,8 +215,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 100%;
-
-                    color: var(--date2);
+                    color: #888DA7;
                     /* Inside auto layout */
                     flex: none;
                     order: 0;
@@ -223,129 +223,76 @@
                 }
             }
 
-            .contributors {
-                // position: absolute;
-                width: 66px;
-                height: 30px;
-                margin-left: 14.8rem;
-                margin-top: -1.8rem;
-                // background-color: red;
+            // .contributors {
+            //     // position: absolute;
+            //     width: 66px;
+            //     height: 30px;
+            //     margin-left: 13.8rem;
+            //     margin-top: -1.8rem;
+            //     // background-color: red;
+            // }
 
-                .item {
-                    // position: absolute;
-                    background-image: url(../../assets/c1.png);
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    border-radius: 50%;
-                    left: 13.8rem;
-                    margin-top: -1.5rem;
-                }
+            .comments {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                left: 14rem;
+                top: 0.5rem;
+                background-image: url(../../assets/comment.svg);
+                opacity: 0.9;
 
-                .item2 {
+
+                .comm-stats {
+
                     position: absolute;
-                    background-image: url(../../assets/c2.png);
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    border-radius: 50%;
-                    left: 15.7rem;
+                    left: 1.4rem;
+                    // right: 54.35%;
                     top: 0.1rem;
-                    //    margin-top: 1rem;
-                }
+                    bottom: 63.8%;
 
-                .stats {
-                    position: absolute;
-                    height: 1.9rem;
-                    width: 1.9rem;
-                    left: 16.7rem;
-                    top: 0.2rem;
-                    // box-sizing: border-box;
-                    border-radius: 50%;
-                    background: #FFFFFF;
-                    border: 2px solid rgba(28, 29, 34, 0.12);
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
 
-                    span {
-                        position: absolute;
-                        width: 14px;
-                        height: 12px;
-                        left: 0.3rem;
-                        margin-top: 0.45rem;
+                    /* identical to box height, or 14px */
 
-                        font-family: "Exo 2";
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 12px;
-                        line-height: 100%;
-
-                        /* identical to box height, or 12px */
-
-                        color: #1C1D22;
+                    color: rgba(28, 29, 34, 0.5);
 
 
-                    }
                 }
             }
 
-            // .comments {
-            //     position: absolute;
-            //     width: 18px;
-            //     height: 18px;
-            //     left: 14rem;
-            //     top: 0.5rem;
-            //     background-image: url(../../assets/comment.svg);
-            //     opacity: 0.9;
+            .files {
+                .file-img {
+                    position: absolute;
+                    width: 18px;
+                    height: 20px;
+                    left: 16.7rem;
+                    top: 0.4rem;
+
+                    transform: rotate(180deg);
+                    opacity: 0.8;
+                    background-image: url(../../assets/att.svg);
+
+                }
+
+                .files-stats {
+                    position: absolute;
+                    left: 18rem;
+                    top: 0.7rem;
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+
+                    color: rgba(28, 29, 34, 0.5);
 
 
-            //     .comm-stats {
-
-            //         position: absolute;
-            //         left: 1.4rem;
-            //         // right: 54.35%;
-            //         top: 0.1rem;
-            //         bottom: 63.8%;
-
-            //         font-family: 'Baloo 2';
-            //         font-style: normal;
-            //         font-weight: 600;
-            //         font-size: 14px;
-            //         line-height: 100%;
-
-            //         /* identical to box height, or 14px */
-
-            //         color: rgba(28, 29, 34, 0.5);
-
-
-            //     }
-            // }
-
-            // .files {
-            //     .file-img {
-            //         position: absolute;
-            //         width: 18px;
-            //         height: 20px;
-            //         left: 16.7rem;
-            //         top: 0.4rem;
-
-            //         transform: rotate(180deg);
-            //         opacity: 0.8;
-            //         background-image: url(../../assets/att.svg);
-
-            //     }
-
-            //     .files-stats {
-            //         position: absolute;
-            //         left: 18rem;
-            //         top: 0.7rem;
-            //         font-family: 'Baloo 2';
-            //         font-style: normal;
-            //         font-weight: 600;
-            //         font-size: 14px;
-            //         line-height: 100%;
-
-            //         color: rgba(28, 29, 34, 0.5);
-
-
-            //     }
-            // }
+                }
+            }
         }
 
         &:hover {
