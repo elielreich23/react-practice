@@ -68,6 +68,20 @@ const Sidebar = () => {
                         <p>&#62;</p>
                     </div>
                 </div>
+                <div className="dark-mode">
+                    <div className="light">
+                        <span className="sun">
+                           
+                        </span>
+                        <h4>Light</h4>
+                    </div>
+                    <div className="dark">
+                        <span className="moon">
+
+                        </span>
+                        <h4 className="dark-txt ">Dark</h4>
+                    </div>
+                </div>
                 <Header />
             </div>
 

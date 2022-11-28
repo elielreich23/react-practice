@@ -246,6 +246,7 @@
         margin: 2rem 1.813rem 0 1.75rem;
         // padding-top: 0.1rem;
         display: block;
+
         // top: 100px;
         // background-color: red;
         h3 {
@@ -256,7 +257,7 @@
             line-height: 100%;
         }
 
-      
+
 
         .team {
             // position: absolute;
@@ -302,6 +303,87 @@
             margin: 1.52rem 1.813rem 0 0;
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    .dark-mode {
+        position: absolute;
+        width: 262px;
+        height: 42px;
+        left: 1rem;
+        bottom: 0.51rem;
+        background: rgba(2, 2, 2, 0.219);
+        border-radius: 22px;
+
+        .light {
+            position: absolute;
+            width: 140px;
+            height: 40px;
+            margin-left: 1px;
+            margin-top: 1px;
+            cursor: pointer;
+
+            background: #FFFFFF;
+            box-shadow: 0px 8px 6px rgba(28, 29, 34, 0.06);
+            border-radius: 4.8rem;
+
+            h4 {
+                position: absolute;
+                width: 33px;
+                height: 14px;
+                margin-left: 3rem;
+                top: 0.8rem;
+
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+
+                /* identical to box height, or 14px */
+
+                color: #1C1D22;
+            }
+
+            span.sun {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 19.5px;
+                top: 10.5px;
+                background-image: url(../../assets//sun.svg);
+
+            }
+        }
+
+        .dark {
+            position: absolute;
+            width: 57px;
+            height: 20px;
+            left: 184px;
+            top: 12px;
+
+            span.moon {
+                position: absolute;
+                background-image: url(../../assets/moon.svg);
+                width: 20px;
+                height: 20px;
+                left: -1.5rem;
+                top: -0.1rem;
+            }
+
+
+            h4.dark-txt {
+                margin-top: 0.1rem;
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+
+                color: rgba(28, 29, 34, 0.5);
+            }
+
         }
     }
 }
