@@ -1,8 +1,15 @@
-import React from 'react'
+import { useState } from 'react'
 import './style.scss'
 import Header from '../header/Header'
 
+
 const Sidebar = () => {
+    // const [btnstate, setBtnstate] = useState(false)
+    // function handleClick() {
+    //     setBtnstate = (btnstate >= !btnstate)
+    // }
+    // let toggleClass = btnstate ? 'active' : null;
+
     return (
         <>
 
@@ -18,6 +25,9 @@ const Sidebar = () => {
                 <div className="img"></div>
                 <div className="icons-container">
                     {/*  projects this toggle on click of icon */}
+                    {/* <div className={`icon1${toggleClass}`}
+                    onClick={handleClick}
+                    > */}
                     <div className="icon1">
                         <div className="outer-circle"></div>
                     </div>
@@ -37,7 +47,7 @@ const Sidebar = () => {
                 {/* logout */}
                 <div className="icon8"></div>
             </div>
-            <div className="activeSidebar" id="activeSidebar">
+            <div className="activeSidebar" id="Sidebar">
                 {/* create rules to display the project sidebar */}
                 <div className="project">
                     <h1>Projects</h1>
@@ -71,7 +81,7 @@ const Sidebar = () => {
                 <div className="dark-mode">
                     <div className="light">
                         <span className="sun">
-                           
+
                         </span>
                         <h4>Light</h4>
                     </div>
