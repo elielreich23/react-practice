@@ -9,7 +9,8 @@ const [isToggled, setIsToggled] = useState(false)
   return (
     <>
       <section className="todo-title">
-        {/* the number in nthe bracket should be gotten from the number of task in the section */}
+        {/* the number in the bracket should be gotten from the number of task in the section */}
+        {/* create  logic for card creation*/}
         <h2>To do(4)</h2>
         <div className="circle">
           <span>+</span>
