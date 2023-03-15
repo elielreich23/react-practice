@@ -12,7 +12,7 @@ const Sidebar = () => {
 
     return (
         <>
-
+            {/* correct display of sidebar on larger screen */}
             {/* <FontAwesomeIcon icon={solid('user-secret=*')}/> */}
             <div className="container">
                 {/* toggle */}
