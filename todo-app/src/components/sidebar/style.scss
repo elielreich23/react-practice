@@ -1,6 +1,6 @@
 .container {
-    position: relative;
-    height: 100vh;
+    position: static;
+    height: 55rem;
     width: 3.5rem;
     background: #1C1D22;
     top: 0;
@@ -189,7 +189,7 @@
     position: absolute;
     // visibility: hidden;
     width: 20rem;
-    height: 100vh;
+    height: 55rem;
     left: 3.5rem;
     top: 0px;
     //    CHANGE TO white after
