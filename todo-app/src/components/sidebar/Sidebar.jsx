@@ -15,12 +15,12 @@ const Sidebar = () => {
             {/* correct display of sidebar on larger screen */}
             {/* <FontAwesomeIcon icon={solid('user-secret=*')}/> */}
             <div className="container">
-                {/* toggle */}
-                <div className="dots">
+                
+                {/* <div className="dots">
                     <div className="one"></div>
                     <div className="two"></div>
                     <div className="three"></div>
-                </div>
+                </div> */}
                 {/* logo */}
                 <div className="img"></div>
                 <div className="icons-container">
