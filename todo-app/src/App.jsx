@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* <div className="app">
-
+have to edit it 
     </div> */}
       <Sidebar />
       <Todo/>
