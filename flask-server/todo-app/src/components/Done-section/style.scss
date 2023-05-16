@@ -1,0 +1,304 @@
+:root {
+    --bc: #1c1d22;
+    --card-width: 20.3rem;
+    --card-width1: 18rem;
+    --fs: 2rem;
+    --fw: 3rem;
+    --T: 12.5rem;
+    --progress-bar: rgba(28, 29, 34, 0.08);
+    --neon-carrot: rgba(255, 159, 72, 1);
+    --date: rgba(136, 141, 167, 0.1);
+    --second-date: rgba(255, 121, 121, 0.1);
+    --date2: #ff7979;
+    --fill: #78D700;
+
+}
+
+.done-title {
+    // position: absolute;
+    width: 320px;
+    height: 18px;
+    margin-left: 69.4rem;
+    top: 10.3rem;
+    display: inline-block;
+    padding-left: 15rem;
+
+
+    h3 {
+        position: absolute;
+        width: 96px;
+        height: 14px;
+        left: -0.1rem;
+        top: 0.7rem;
+
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+
+
+        color: rgba(28, 29, 34, 0.5);
+
+    }
+}
+
+.done {
+    // recalibrate size to rem
+    position: absolute;
+    width: 322px;
+    height: 100%;
+    left: 68.7rem;
+    top: var(--T);
+    border-radius: 8px;
+    // background-color: red;
+    // vertical scroll bar
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: justify;
+
+    .card1 {
+        position: absolute;
+        width: 320px;
+        height: 178px;
+        // left: -10.5rem;
+        // margin: 12.5rem auto;
+        padding-top: 1.25rem;
+        background: #FFFFFF;
+        border: 2px solid rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        // border-radius: 12px;
+
+        .card-header1 {
+            position: absolute;
+            width: 15rem;
+            height: 2.5rem;
+            // left: 1.2rem;
+            top: 1rem;
+
+            h3 {
+                margin-left: 0.4rem;
+                display: inline;
+                flex-direction: column;
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 100%;
+            }
+
+            h4 {
+                // display: inline;
+                // flex-direction: column;
+                margin-left: 0.4rem;
+                margin-top: 0.3rem;
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 100%;
+                color: rgba(28, 29, 34, 0.5);
+            }
+
+            .more {
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                left: 17rem;
+                top: 0.1rem;
+
+                background: #ffffff;
+                border: 2px solid rgba(28, 29, 34, 0.1);
+                border-radius: 14px;
+                cursor: pointer;
+
+                p {
+                    position: absolute;
+                    margin-left: 2.8px;
+                    top: -3px;
+
+                }
+            }
+        }
+
+        .card-progress {
+            position: absolute;
+            width: 280px;
+            height: 30px;
+            left: 0.5rem;
+            top: 4.5rem;
+
+            img {
+                width: 16px;
+                height: 16px;
+                margin-left: 0.1rem;
+                top: 0.4rem;
+                background-image: url(../../assets/ham.png);
+                // border: none;
+            }
+
+            .progress-title {
+                width: 7rem;
+                height: 0.9rem;
+                padding-left: 1.52em;
+                left: 0.5rem;
+                top: -2rem;
+
+                h4 {
+                    position: absolute;
+                    top: -0.1rem;
+                    font-family: "Exo 2";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                    line-height: 100%;
+                    color: rgba(28, 29, 34, 0.5);
+                }
+
+                h6 {
+                    position: absolute;
+                    top: -0.1rem;
+                    left: 15rem;
+                    font-family: "Exo 2";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                    line-height: 100%;
+                    // color: rgba(28, 29, 34, 0.5);
+                }
+            }
+
+            .box {
+                background: var(--progress-bar);
+                border: 0px none;
+                border-radius: 2px;
+                height: 4px;
+                width: 18.3rem;
+                background: rgba(136, 141, 167, 0.1);
+
+                .done-fill {
+                    border: 0px none;
+                    border-radius: 2px;
+                    height: 4px;
+                    width: auto;
+                    background-color: var(--fill);
+                }
+            }
+
+        }
+
+        .infos {
+            position: absolute;
+            width: 18.5rem;
+            height: 30px;
+            left: 0.5rem;
+            top: 8rem;
+
+            .date {
+                align-items: flex-start;
+                background-color: var(--date);
+                border: 1px none;
+                border-radius: 17px;
+                display: flex;
+                gap: 10px;
+                overflow: hidden;
+                padding: 8px 16px;
+
+                width: fit-content;
+
+                h3 {
+                    width: 81px;
+                    height: 14px;
+
+                    font-family: "Exo 2";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: #888DA7;
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+            }
+
+            // .contributors {
+            //     // position: absolute;
+            //     width: 66px;
+            //     height: 30px;
+            //     margin-left: 13.8rem;
+            //     margin-top: -1.8rem;
+            //     // background-color: red;
+            // }
+
+            .comments {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                left: 14rem;
+                top: 0.5rem;
+                background-image: url(../../assets/comment.svg);
+                opacity: 0.9;
+
+
+                .comm-stats {
+
+                    position: absolute;
+                    left: 1.4rem;
+                    // right: 54.35%;
+                    top: 0.1rem;
+                    bottom: 63.8%;
+
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+
+                    /* identical to box height, or 14px */
+
+                    color: rgba(28, 29, 34, 0.5);
+
+
+                }
+            }
+
+            .files {
+                .file-img {
+                    position: absolute;
+                    width: 18px;
+                    height: 20px;
+                    left: 16.7rem;
+                    top: 0.4rem;
+
+                    transform: rotate(180deg);
+                    opacity: 0.8;
+                    background-image: url(../../assets/att.svg);
+
+                }
+
+                .files-stats {
+                    position: absolute;
+                    left: 18rem;
+                    top: 0.7rem;
+                    font-family: 'Baloo 2';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 100%;
+
+                    color: rgba(28, 29, 34, 0.5);
+
+
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 2px 2px #858586;
+            // opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}

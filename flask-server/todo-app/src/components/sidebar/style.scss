@@ -1,0 +1,394 @@
+// the size need to be corrected for larger screen
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 3.5rem;
+    overflow: hidden;
+    background: #1C1D22;
+    top: 0;
+
+    .dots {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        // margin-right: 0.3rem;
+        // padding-left: 0.8rem;
+        width: 34px;
+        height: 6px;
+        left: 0.5rem;
+        top: 0.8rem;
+
+        .one {
+            // position: absolute;
+            width: 6px;
+            height: 6px;
+            left: 5.8rem;
+            left: 8px;
+            top: 10px;
+            border-radius: 1rem;
+            background: #FFFFFF;
+        }
+
+        .two {
+            // position: absolute;
+            width: 6px;
+            height: 6px;
+            left: 5rem;
+            top: 10px;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .three {
+            // position: absolute;
+            width: 6px;
+            height: 6px;
+            left: 8px;
+            top: 10px;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.4);
+            ;
+        }
+    }
+
+    .img {
+        position: absolute;
+        width: 1.5rem;
+        height: 26px;
+        margin: 0 0.98rem;
+        cursor: pointer;
+        top: 2.5em;
+        background-image: url(../../assets/Logo.svg);
+    }
+
+    .icons-container {
+        position: absolute;
+        width: 2.5rem;
+        height: 26rem;
+        display: block;
+        margin: 0 0.45rem;
+        padding-top: 4.5rem;
+
+        justify-content: space-evenly;
+        top: 5.0rem;
+        // background-color: #a76d6d;
+        // opacity: 0.1;
+
+        .icon1 {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            margin: 0 0.5rem;
+            top: 1.3rem;
+            // cursor: pointer;s
+
+            .outer-circle {
+                //adjust to be perfectly centered
+                position: absolute;
+                height: 2.5rem;
+                width: 2.5rem;
+                top: -0.5rem;
+                margin: 0 -0.6rem;
+                cursor: pointer;
+                display: inline-block;
+                border-radius: 50%;
+
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            // background: rgba(255, 255, 255, 0.1);
+            background-image: url(../../assets/Icon.svg);
+        }
+
+        .icon2 {
+            // position: relative;
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            margin-left: 0.4rem;
+            background-image: url(../../assets/Icon1.svg);
+            opacity: 0.5;
+
+        }
+
+
+        .icon3 {
+            background-image: url(../../assets/1.svg);
+            width: 22px;
+            height: 22px;
+            // left: 34px;
+            margin-left: 0.4rem;
+            cursor: pointer;
+            margin-top: 1.68rem;
+            // top: 268px;
+            opacity: 0.5;
+        }
+
+        .icon4 {
+            background-image: url(../../assets/3.svg);
+            width: 22px;
+            height: 22px;
+            // left: 34px;
+            cursor: pointer;
+            margin-left: 0.4rem;
+            margin-top: 1.68rem;
+            // top: 330px;
+
+            opacity: 0.5;
+        }
+
+        .icon5 {
+            background-image: url(../../assets/4.svg);
+            cursor: pointer;
+            margin-left: 0.4rem;
+            margin-top: 1.68rem;
+            width: 22px;
+            height: 22px;
+            opacity: 0.5;
+
+        }
+
+        .icon6 {
+            background-image: url(../../assets/5.svg);
+            cursor: pointer;
+            margin-left: 0.4rem;
+            margin-top: 1.68rem;
+            width: 22px;
+            opacity: 0.5;
+            height: 22px;
+        }
+
+        .icon7 {
+            background-image: url(../../assets/6.svg);
+            cursor: pointer;
+            margin-left: 0.4rem;
+            margin-top: 1.68rem;
+            width: 22px;
+            opacity: 0.5;
+            height: 22px;
+
+            .icon7:active {
+                background-color: #FFFFFF;
+            }
+        }
+    }
+
+    .icon8 {
+        position: absolute;
+        background-image: url(../../assets/7.svg);
+        cursor: pointer;
+        margin-left: 1rem;
+        bottom: -15rem;
+        width: 22px;
+        opacity: 0.5;
+        height: 22px;
+    }
+
+}
+
+.activeSidebar {
+    position: absolute;
+    // visibility: hidden;
+    width: 20rem;
+    height: 100vh;
+    left: 3.5rem;
+    top: 0px;
+    //    CHANGE TO white after
+    background: #FFFFFF;
+    box-shadow: 40px 180px 80px rgba(9, 10, 10, 0.06);
+
+    .project {
+        width: 262px;
+        height: 30px;
+        left: 118px;
+        top: 32px;
+
+        h1 {
+            width: 5rem;
+            height: 30px;
+            margin: 1.22rem 10.75rem 0 1.75rem;
+
+
+            font-family: "Exo 2";
+            font-style: bold;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 100%;
+
+            /* identical to box height, or 30px */
+
+            color: #1C1D22;
+        }
+
+        .new {
+            position: absolute;
+            background: rgba(28, 29, 34, 0.08);
+            height: 1.52rem;
+            width: 1.52rem;
+            top: 1.55rem;
+            margin: 0 17.15rem;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 50%;
+
+        }
+
+        span {
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            margin-left: 17.5rem;
+            margin-top: -1.4rem;
+            cursor: pointer;
+            opacity: 0.4;
+        }
+    }
+
+    .menus {
+        width: 261px;
+        height: 572px;
+        margin: 2rem 1.813rem 0 1.75rem;
+        // padding-top: 0.1rem;
+        display: block;
+
+        // top: 100px;
+        // background-color: red;
+        h3 {
+            font-family: "Exo 2";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+
+
+        .team {
+            // position: absolute;
+            width: 16.3rem;
+            height: 1.5rem;
+            display: flex;
+            color: rgba(28, 29, 34, 0.5);
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+
+        .projects {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .task {
+            //make arrow larger
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .reminders {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .message {
+            width: 16.3rem;
+            height: 1.5rem;
+            margin: 1.52rem 1.813rem 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .dark-mode {
+        position: absolute;
+        width: 262px;
+        height: 42px;
+        left: 1rem;
+        bottom: 0.51rem;
+        background: rgba(2, 2, 2, 0.219);
+        border-radius: 22px;
+
+        .light {
+            position: absolute;
+            width: 140px;
+            height: 40px;
+            margin-left: 1px;
+            margin-top: 1px;
+            cursor: pointer;
+
+            background: #FFFFFF;
+            box-shadow: 0px 8px 6px rgba(28, 29, 34, 0.06);
+            border-radius: 4.8rem;
+
+            h4 {
+                position: absolute;
+                width: 33px;
+                height: 14px;
+                margin-left: 3rem;
+                top: 0.8rem;
+
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+
+                /* identical to box height, or 14px */
+
+                color: #1C1D22;
+            }
+
+            span.sun {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 19.5px;
+                top: 10.5px;
+                background-image: url(../../assets//sun.svg);
+
+            }
+        }
+
+        .dark {
+            position: absolute;
+            width: 57px;
+            height: 20px;
+            left: 184px;
+            top: 12px;
+
+            span.moon {
+                position: absolute;
+                background-image: url(../../assets/moon.svg);
+                width: 20px;
+                height: 20px;
+                left: -1.5rem;
+                top: -0.1rem;
+            }
+
+
+            h4.dark-txt {
+                margin-top: 0.1rem;
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+
+                color: rgba(28, 29, 34, 0.5);
+            }
+
+        }
+    }
+}
