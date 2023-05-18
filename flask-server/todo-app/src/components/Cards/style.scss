@@ -1,0 +1,19 @@
+.card-container{
+    .cards{
+        position: absolute;
+        width: 320px;
+        height: 178px;
+        //   margin: 0.5rem ;
+        padding-top: 1.25rem;
+        background: #FFFFFF;
+        border: 2px solid rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        // border-radius: 12px;
+    
+        &:hover {
+            box-shadow: 2px 2px #858586;
+            // opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}
